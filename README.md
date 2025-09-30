@@ -16,7 +16,6 @@
   * [Ranges and Links](#ranges-and-links)
 * [Example Prompts](#example-prompts)
 * [Repository Structure](#repository-structure)
-* [Getting Started](#getting-started)
 * [Roadmap](#roadmap)
 * [License](#license)
 
@@ -136,39 +135,8 @@ STYLE: manga style, sunny holidays mood
 * `SPEC.md` → complete syntax specification
 * `examples/` → sample `.til` prompts and visual mockups
 * `schema/` → JSON schema describing parsed format
-* `parser/` → Python implementation of the TILLING parser
 * `visualizer/` → mockup generator for grids
-* `cli/` → command-line tools for validation and visualization
 * `docs/` → diagrams, usage guides, design notes
-
----
-
-## Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/tilling-spec.git
-   cd tilling-spec
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Parse a sample prompt:
-
-   ```bash
-   python -m cli.tilling_cli validate examples/example_3x3.til
-   ```
-
-4. Visualize the layout:
-
-   ```bash
-   python -m cli.tilling_cli visualize examples/example_3x3.til --out preview.png
-   ```
 
 ---
 
