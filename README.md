@@ -1,6 +1,6 @@
-# TILLING Framework
+# Tiling Framework
 
-**TILLING** is a structured prompt framework for guiding AI-generated images using a grid-based system. It allows creators to define elements in a scene with precise positions, weights, depth layers, and relationships. This repository provides the specification, examples, parsing tools, and visualization utilities to adopt TILLING in creative workflows.
+**Tiling** is a structured prompt framework for guiding AI-generated images using a grid-based system. It allows creators to define elements in a scene with precise positions, weights, depth layers, and relationships. This repository provides the specification, examples, parsing tools, and visualization utilities to adopt tiling in creative workflows.
 
 ---
 
@@ -23,14 +23,14 @@
 
 ## Overview
 
-TILLING introduces a **visual grammar** for describing image layouts. Instead of freeform text prompts, it divides the canvas into a **grid (WxH)** where each cell (or group of cells) holds a description. This approach:
+tiling introduces a **visual grammar** for describing image layouts. Instead of freeform text prompts, it divides the canvas into a **grid (WxH)** where each cell (or group of cells) holds a description. This approach:
 
 * Enforces **structured composition**
 * Allows **precise placement** of objects
 * Separates **foreground, midground, and background** layers
 * Supports **importance weighting** and **motion vectors**
 
-TILLING makes image generation more predictable, modular, and reproducible.
+tiling makes image generation more predictable, modular, and reproducible.
 
 ---
 
@@ -38,9 +38,9 @@ TILLING makes image generation more predictable, modular, and reproducible.
 
 ### Grid System
 
-A TILLING grid is defined by `TILLING WxH`, where `W` = number of columns and `H` = number of rows.
+A tiling grid is defined by `tiling WxH`, where `W` = number of columns and `H` = number of rows.
 
-Example: `TILLING 3x4` → 3 columns, 4 rows.
+Example: `tiling 3x4` → 3 columns, 4 rows.
 
 ```
     1     2     3
@@ -90,7 +90,7 @@ Importance is defined with `!n` where `n` is an integer ≥1.
 ### Example 1: 3x3 Grid
 
 ```
-TILLING 3x3
+tiling 3x3
 STYLE: digital painting, twilight atmosphere
 [A1!3]: Stormy water
 [A2,3:BG]: Iceberg
@@ -108,10 +108,10 @@ STYLE: digital painting, twilight atmosphere
 ### Example 2: 3x4 Grid
 
 ```
-TILLING 3x4
+tiling 3x4
 STYLE: manga style, sunny holidays mood
 [A1-A3:BG]: Blue sky
-[A2:BG]: Airplane with “I love TILLING” written
+[A2:BG]: Airplane with “I love tiling” written
 [B2-B3:MG]: Ocean with small waves
 [B2:MG]: Surfer with black board
 [C1-C4:MG]: Detailed sandy beach
